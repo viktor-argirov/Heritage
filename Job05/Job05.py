@@ -1,0 +1,26 @@
+class Forme:
+    def __init__(self):
+
+       def aire(self):
+            return 0
+
+class Rectangle(Forme):
+    
+    def __init__(self,largeur,hauteur):
+        self.largeur=largeur
+        self.hauteur=hauteur
+    
+    def aire(self):
+        return self.largeur*self.hauteur
+
+class Cercle(Forme):
+    def __init__(self,radius):
+        self.radius=radius
+    
+    def aire(self):
+        return self.radius**2*3
+
+e=Forme()
+r=Rectangle(5,3)
+cercle=Cercle(2)
+print(cercle.aire())
